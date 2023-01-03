@@ -1,0 +1,179 @@
+.main-page {
+    min-height: 100vh;
+    display: none;
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#text-form {
+    margin: 5%;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+#text-form input {
+    padding: .5rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    background: linear-gradient(135deg, rgba(106, 130, 251, .2), rgba(252, 92, 125, .2));
+    outline: none;
+    border: none;
+    width: 30rem;
+}
+
+#text-form input:focus {
+    background: linear-gradient(135deg, rgba(106, 130, 251, .35), rgba(252, 92, 125, .35));
+}
+
+#text-form button {
+    padding: .05rem;
+    border-radius: .25rem;
+    background-color: #eee;
+    cursor: pointer;
+    border: none;
+    background: whitesmoke;
+}
+
+button:active {
+    scale: .98;
+}
+
+.image-container img {
+    width: 100%;
+}
+
+.image-container {
+    width: 32rem;
+    height: 32rem;
+    border: .125rem solid black;
+    box-shadow: 0 0 .7rem rgba(0, 0, 0, .7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media screen and (max-width: 540px) {
+    .image-container {
+        width: 28rem;
+    }
+
+    #text-form input {
+        width: 26rem;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .image-container {
+        width: 26rem;
+        height: 30rem;
+    }
+
+    #text-form input {
+        width: 22rem;
+    }
+
+    .image-container lottie-player {
+        scale: .9;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .image-container {
+        width: 26rem;
+        height: 30rem;
+    }
+
+    #text-form input {
+        width: 22rem;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .image-container {
+        width: 24rem;
+        height: 28rem;
+    }
+
+    #text-form input {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 405px) {
+    .image-container {
+        width: 22rem;
+    }
+
+    #text-form input {
+        width: 18rem;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .image-container {
+        width: 20rem;
+    }
+
+    #text-form input {
+        width: 16rem;
+    }
+
+    .image-container lottie-player {
+        scale: .8;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .image-container {
+        width: 18rem;
+        height: 26rem;
+    }
+
+    #text-form input {
+        width: 14rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .image-container {
+        width: 16rem;
+        height: 24rem;
+    }
+
+    #text-form input {
+        width: 12rem;
+    }
+
+    .image-container lottie-player {
+        scale: .7;
+    }
+}
+
+@media screen and (max-width: 265px) {
+    .image-container {
+        width: 14rem;
+        height: 20rem;
+    }
+
+    #text-form input {
+        width: 10rem;
+    }
+
+    .image-container lottie-player {
+        scale: .6;
+    }
+
+    #text-form input::placeholder {
+        font-size: .8rem;
+    }
+}

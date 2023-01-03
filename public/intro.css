@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: 'Yeon Sung', cursive;
+    z-index: 3;
+    min-height: 100vh;
+    background: radial-gradient(circle, rgba(2, 140, 80, 0.3), rgba(0, 0, 0, .7));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.top {
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom {
+    margin-top: 1vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 7.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.swiper {
+    width: 32rem;
+    height: 32rem;
+    box-shadow: 0 0 .7rem rgba(0, 0, 0, .7);
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.left lottie-player,
+.right lottie-player {
+    cursor: pointer;
+}
+
+.top h1 {
+    font-size: 3.5rem;
+    cursor: default;
+    text-shadow: 0 0 .125rem black;
+}
+
+.landing-anim {
+    margin-top: -1.25rem;
+}
+
+.bottom {
+    margin-top: 1rem;
+}
+
+.bottom button {
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: .3rem .4rem;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: .2rem;
+    text-shadow: 0 0 .05rem whitesmoke;
+    cursor: pointer;
+    box-shadow: .1rem .1rem 0 inset rgb(3, 96, 136), -.1rem -.1rem 0 inset rgb(3, 96, 136);
+}
+
+.bottom button:active {
+    scale: .98;
+}
+
+.bottom button:hover {
+    background: whitesmoke;
+    color: black;
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, .7), .125rem .125rem 0 inset black, -.125rem -.125rem 0 inset black;
+    text-shadow: 0 0 .075rem black;
+}
+
+@media screen and (max-width: 790px) {
+    .swiper {
+        width: 30rem;
+    }
+
+    .left,
+    .right {
+        scale: .8;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .swiper {
+        width: 28rem;
+    }
+
+    .left,
+    .right {
+        scale: .65;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .container {
+        margin-top: 10%;
+    }
+
+    .swiper {
+        width: 26rem;
+    }
+
+    .left,
+    .right {
+        scale: .5;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .container {
+        margin-top: 12%;
+    }
+
+    .swiper {
+        width: 24rem;
+        height: 28rem;
+    }
+
+    .left,
+    .right {
+        scale: .4;
+    }
+}
+
+@media screen and (max-width: 625px) {
+
+    .swiper {
+        width: 32rem;
+        height: 32rem;
+        position: relative;
+    }
+
+    .left,
+    .right {
+        position: absolute;
+        scale: .5;
+        z-index: 2;
+    }
+
+    .left {
+        left: 0;
+    }
+
+    .right {
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .swiper {
+        width: 30rem;
+    }
+
+    .left {
+        left: -2%;
+    }
+
+    .right {
+        right: -2%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .swiper {
+        width: 26rem;
+        height: 30rem;
+    }
+
+    .left {
+        left: -2%;
+    }
+
+    .right {
+        right: -2%;
+    }
+
+    .top h1 {
+        font-size: 3rem;
+    }
+
+    .landing-anim {
+        scale: .9;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    .container {
+        margin-top: 10%;
+    }
+
+    .swiper {
+        width: 24rem;
+        height: 28rem;
+    }
+
+    .left {
+        left: -4%;
+    }
+
+    .right {
+        right: -4%;
+    }
+
+    .top h1 {
+        font-size: 2.5rem;
+    }
+
+    .landing-anim {
+        scale: .8;
+        margin-top: -2rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .swiper {
+        width: 22rem;
+        height: 24rem;
+    }
+
+    .left {
+        left: -6%;
+    }
+
+    .right {
+        right: -6%;
+    }
+
+    .top h1 {
+        font-size: 2rem;
+    }
+
+    .landing-anim {
+        scale: .6;
+        margin-top: -2.5rem;
+    }
+
+    .bottom button {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .swiper {
+        width: 20rem;
+        height: 22rem;
+    }
+
+    .left {
+        left: -8%;
+    }
+
+    .right {
+        right: -8%;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .swiper {
+        width: 18rem;
+        height: 20rem;
+    }
+
+    .left {
+        left: -10%;
+        scale: .3;
+    }
+
+    .right {
+        right: -10%;
+        scale: .3;
+    }
+
+    .top h1 {
+        font-size: 1.6rem;
+    }
+
+    .landing-anim {
+        scale: .5;
+        margin-top: -2.75rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .swiper {
+        width: 16rem;
+        height: 18rem;
+    }
+
+    .left {
+        left: -8%;
+    }
+
+    .right {
+        right: -8%;
+    }
+
+    .top h1 {
+        font-size: 1.4rem;
+    }
+
+    .landing-anim {
+        scale: .5;
+        margin-top: -2.75rem;
+    }
+}
+
+@media screen and (max-width: 270px) {
+    .swiper {
+        width: 16rem;
+        height: 18rem;
+    }
+
+    .left {
+        left: -12%;
+    }
+
+    .right {
+        right: -12%;
+    }
+
+    .top h1 {
+        font-size: 1.2rem;
+    }
+
+    .landing-anim {
+        scale: .5;
+        margin-top: -2.75rem;
+    }
+}
+
+@media screen and (max-width: 240px) {
+    .swiper {
+        width: 14rem;
+        height: 16rem;
+    }
+
+    .left {
+        left: -14%;
+        scale: .15;
+    }
+
+    .right {
+        right: -14%;
+        scale: .15;
+    }
+
+    .top h1 {
+        font-size: 1rem;
+    }
+
+    .landing-anim {
+        scale: .4;
+        margin-top: -3rem;
+    }
+}
+
+@media screen and (max-height: 800px) {
+    .container {
+        margin-top: 3.5%;
+    }
+}

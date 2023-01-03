@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Generator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="intro.css">
+    <link rel="stylesheet" href="mainPage.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="top">
+            <h1>Image Generator</h1>
+            <div class="landing-anim"><lottie-player src="assets/heading.json" background="transparent" speed="1"
+                    style="width: 7.5rem; height: 7.5rem;" loop autoplay></lottie-player></div>
+        </div>
+        <div class="container">
+            <div class="left"><lottie-player src="assets/left.json" background="transparent" speed="1"
+                    style="width: 7.5rem; height: 7.5rem;" loop autoplay></lottie-player></div>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="assets/img1.jpg" alt="error" id="img-one"></div>
+                    <div class="swiper-slide"><img src="assets/img2.jpg" alt="error" id="img-two"></div>
+                    <div class="swiper-slide"><img src="assets/img3.jpg" alt="error" id="img-three"></div>
+                    <div class="swiper-slide"><img src="assets/img4.jpg" alt="error" id="img-four"></div>
+                    <div class="swiper-slide"><img src="assets/img5.jpg" alt="error" id="img-five"></div>
+                    <div class="swiper-slide"><img src="assets/img6.jpg" alt="error" id="img-six"></div>
+                </div>
+            </div>
+            <div class="right"><lottie-player src="assets/right.json" background="transparent" speed="1"
+                    style="width: 7.5rem; height: 7.5rem;" loop autoplay></lottie-player></div>
+        </div>
+        <div class="bottom">
+            <button>Start!</button>
+        </div>
+    </div>
+    <div class="main-page">
+        <div class="image-container">
+            <lottie-player src="assets/Robot.json" background="transparent" speed="1"
+                style="width: 27rem; height: 30rem;" loop autoplay></lottie-player>
+        </div>
+        <form id="text-form">
+            <input type="text" placeholder="Describe your image..." />
+            <button type="submit"><lottie-player src="assets/Send Button.json" background="transparent" speed="1"
+                    style="width: 2rem; height: 2rem;" loop autoplay></lottie-player>
+            </button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"
+        integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
