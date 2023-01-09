@@ -190,7 +190,7 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 515px) {
     .swiper {
         width: 26rem;
         height: 30rem;
@@ -213,7 +213,7 @@
     }
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 460px) {
 
     .container {
         margin-top: 10%;
@@ -242,7 +242,7 @@
     }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 410px) {
     .swiper {
         width: 22rem;
         height: 24rem;
@@ -282,6 +282,10 @@
 
     .right {
         right: -8%;
+    }
+
+    .top h1 {
+        font-size: 1.8rem;
     }
 }
 
@@ -335,7 +339,7 @@
     }
 }
 
-@media screen and (max-width: 270px) {
+@media screen and (max-width: 280px) {
     .swiper {
         width: 16rem;
         height: 18rem;
@@ -359,7 +363,7 @@
     }
 }
 
-@media screen and (max-width: 240px) {
+@media screen and (max-width: 255px) {
     .swiper {
         width: 14rem;
         height: 16rem;
