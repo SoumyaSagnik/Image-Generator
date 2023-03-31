@@ -6,8 +6,6 @@ Tech stack: `HTML` `CSS` `JavaScript` `NodeJS` `ExpressJS`
 
 ## Preview
 
-<p align="center"><video src="./public/assets/imgGeneratorPreview.mp4" /></p>
-
 <figure class="video_container">
   <video controls="true" allowfullscreen="true" poster="path/to/poster_image.png">
     <source src="./public/assets/imgGeneratorPreview.mp4" type="video/mp4">
